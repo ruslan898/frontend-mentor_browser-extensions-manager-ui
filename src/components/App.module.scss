@@ -19,6 +19,14 @@
   gap: $spacing-500;
 }
 
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(338px, 1fr));
+  grid-template-rows: repeat(4, minmax(200px, auto));
+  grid-auto-rows: minmax(200px, auto);
+  gap: $spacing-150;
+}
+
 @media (min-width: 768px) {
   .app {
     padding-top: $spacing-300;

@@ -1,9 +1,10 @@
 import Header from './ui/header/Header';
 import Menubar from './ui/menubar/Menubar';
+import Card from './ui/card/Card';
 import styles from './App.module.scss';
 
 export default function App() {
-  const { app, content } = styles;
+  const { app, content, cardGrid } = styles;
 
   return (
     <main className={app}>
@@ -11,7 +12,26 @@ export default function App() {
         <Header />
         <section className={content}>
           <Menubar />
-          <ul className="card-grid"></ul>
+          <ul className={cardGrid}>
+            <li>
+              <Card />
+            </li>
+            <li>
+              <Card />
+            </li>
+            <li>
+              <Card />
+            </li>
+            <li>
+              <Card />
+            </li>
+            <li>
+              <Card />
+            </li>
+            <li>
+              <Card />
+            </li>
+          </ul>
         </section>
       </div>
     </main>

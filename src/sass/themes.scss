@@ -8,6 +8,8 @@
   --color-text-secondary: #535868;
   --color-border-primary: #d6e2f5;
   --color-border-secondary: #c6c6c6;
+  --color-toggle: #fbfdfe;
+  --color-toggle-active: #C7231A;
 }
 
 [data-theme='dark'] {
@@ -18,4 +20,6 @@
   --color-text-secondary: #c6c6c6;
   --color-border-primary: #535868;
   --color-border-secondary: #535868;
+  --color-toggle: #2F364B;
+  --color-toggle-active: #F25C54;
 }

@@ -1,0 +1,54 @@
+@use '/src/sass/variables.scss' as *;
+@use '/src/sass/mixins.scss' as *;
+
+.card {
+  min-height: 200px;
+  padding: $spacing-250;
+  background-color: var(--color-el-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: $spacing-300;
+}
+
+.info {
+  display: flex;
+  gap: $spacing-200;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.descr {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-100;
+}
+
+.title {
+  color: var(--color-text-primary);
+  @include text-preset-2;
+}
+
+.text {
+  max-width: 40ch;
+  color: var(--color-text-secondary);
+  @include text-preset-5;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.removeBtn {
+  background-color: var(--color-el-primary);
+  padding: $spacing-100 $spacing-200;
+  border: 1px solid var(--color-border-secondary);
+  border-radius: $radius-full;
+  color: var(--color-text-primary);
+  @include text-preset-6;
+}
