@@ -1,0 +1,26 @@
+@use '/src/sass/variables.scss' as *;
+@use '/src/sass/mixins.scss' as *;
+
+.menubar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  &List {
+    display: flex;
+    gap: 12px;
+  }
+}
+
+.title {
+  color: var(--color-text-primary);
+  @include text-preset-1;
+}
+
+@media (min-width: 768px) {
+  .menubar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

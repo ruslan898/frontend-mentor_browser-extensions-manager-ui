@@ -1,0 +1,40 @@
+@use '/src/sass/variables.scss' as *;
+@use '/src/sass/mixins.scss' as *;
+
+.app {
+  min-height: 100vh;
+  background: var(--color-bg);
+  padding: $spacing-250 0 $spacing-800;
+
+  :global(.container) {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-500;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-500;
+}
+
+@media (min-width: 768px) {
+  .app {
+    padding-top: $spacing-300;
+  }
+
+  .content {
+    gap: $spacing-400;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app {
+    padding-top: $spacing-500;
+
+    :global(.container) {
+      gap: $spacing-800;
+    }
+  }
+}

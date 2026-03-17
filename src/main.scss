@@ -34,3 +34,17 @@ img {
   display: block;
   max-inline-size: 100%;
 }
+
+.container {
+  width: clamp(343px, 90%, 1170px);
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
