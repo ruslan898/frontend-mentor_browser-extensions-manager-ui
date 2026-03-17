@@ -1,0 +1,10 @@
+@use '/src/sass/variables.scss' as *;
+@use '/src/sass/mixins.scss' as *;
+
+.logo {
+  width: 179px;
+
+  > path {
+    fill: var(--color-text-primary);
+  }
+}

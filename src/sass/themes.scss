@@ -1,0 +1,21 @@
+@use '/src/sass/variables.scss' as *;
+
+:root {
+  --color-bg: linear-gradient(180deg, #ebf2fc 0%, #eefbf9 100%);
+  --color-el-primary: #fbfdfe;
+  --color-el-secondary: #eeeeee;
+  --color-text-primary: #091540;
+  --color-text-secondary: #535868;
+  --color-border-primary: #d6e2f5;
+  --color-border-secondary: #c6c6c6;
+}
+
+[data-theme='dark'] {
+  --color-bg: linear-gradient(180deg, #04091b 0%, #091540 100%);
+  --color-el-primary: #202535;
+  --color-el-secondary: #2f364b;
+  --color-text-primary: #fbfdfe;
+  --color-text-secondary: #c6c6c6;
+  --color-border-primary: #535868;
+  --color-border-secondary: #535868;
+}
