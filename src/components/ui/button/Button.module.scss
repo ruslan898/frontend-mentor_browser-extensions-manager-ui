@@ -3,7 +3,7 @@
 
 .btn {
   padding: $spacing-100 $spacing-250;
-  background-color: var(--color-toggle);
+  background-color: var(--color-filter);
   border: 1px solid var(--color-border-primary);
   border-radius: $radius-full;
   color: var(--color-text-primary);
@@ -11,6 +11,7 @@
   box-shadow: 0px 1px 2px 0px rgba(184, 196, 215, 0.4);
 
   &.active {
-    background-color: var(--color-toggle-active);
+    color: var(--color-filter-active-text);
+    background-color: var(--color-filter-active);
   }
 }

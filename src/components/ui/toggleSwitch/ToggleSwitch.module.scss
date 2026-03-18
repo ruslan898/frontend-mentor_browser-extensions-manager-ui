@@ -1,6 +1,14 @@
 @use '/src/sass/variables.scss' as *;
 @use '/src/sass/mixins.scss' as *;
 
+:root {
+  --color-toggle-slider: #c6c6c6;
+}
+
+:root[data-theme='dark'] {
+  --color-toggle-slider: #535868;
+}
+
 /* The switch - the box around the slider */
 .switchClass {
   position: relative;
@@ -24,7 +32,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--color-toggle-slider);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -42,11 +50,11 @@
 }
 
 input:checked + .slider {
-  background-color: var(--color-toggle-active);
+  background-color: var(--color-filter-active);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px var(--color-toggle-active);
+  box-shadow: 0 0 1px var(--color-filter-active);
 }
 
 input:checked + .slider:before {

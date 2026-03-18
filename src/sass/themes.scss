@@ -2,24 +2,26 @@
 
 :root {
   --color-bg: linear-gradient(180deg, #ebf2fc 0%, #eefbf9 100%);
-  --color-el-primary: #fbfdfe;
-  --color-el-secondary: #eeeeee;
+  --color-el: #fbfdfe;
   --color-text-primary: #091540;
   --color-text-secondary: #535868;
   --color-border-primary: #d6e2f5;
   --color-border-secondary: #c6c6c6;
-  --color-toggle: #fbfdfe;
-  --color-toggle-active: #C7231A;
+  --color-theme-btn: #eeeeee;
+  --color-filter: #fbfdfe;
+  --color-filter-active: #C7231A;
+  --color-filter-active-text: #FBFDFE;
 }
 
 [data-theme='dark'] {
   --color-bg: linear-gradient(180deg, #04091b 0%, #091540 100%);
-  --color-el-primary: #202535;
-  --color-el-secondary: #2f364b;
+  --color-el: #202535;
   --color-text-primary: #fbfdfe;
   --color-text-secondary: #c6c6c6;
   --color-border-primary: #535868;
   --color-border-secondary: #535868;
-  --color-toggle: #2F364B;
-  --color-toggle-active: #F25C54;
+  --color-theme-btn: #2f364b;
+  --color-filter: #2F364B;
+  --color-filter-active: #F25C54;
+  --color-filter-active-text: #091540;
 }

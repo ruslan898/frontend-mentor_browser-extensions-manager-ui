@@ -1,7 +1,13 @@
+import type { Filter } from '../../App';
 import Button from '../button/Button';
 import styles from './Menubar.module.scss';
 
-export default function Menubar() {
+type MenubarProps = {
+  setFilter: (filter: Filter) => void;
+  filterVal: Filter;
+};
+
+export default function Menubar({ setFilter, filterVal }: MenubarProps) {
   const { menubar, title, menubarList } = styles;
 
   return (
@@ -9,13 +15,25 @@ export default function Menubar() {
       <h1 className={title}>Extensions List</h1>
       <ul className={menubarList}>
         <li>
-          <Button>All</Button>
+          <Button onClick={() => setFilter('all')} isActive={filterVal === 'all'}>
+            All
+          </Button>
         </li>
         <li>
-          <Button>Active</Button>
+          <Button
+            onClick={() => setFilter('active')}
+            isActive={filterVal === 'active'}
+          >
+            Active
+          </Button>
         </li>
         <li>
-          <Button>Inactive</Button>
+          <Button
+            onClick={() => setFilter('inactive')}
+            isActive={filterVal === 'inactive'}
+          >
+            Inactive
+          </Button>
         </li>
       </ul>
     </nav>

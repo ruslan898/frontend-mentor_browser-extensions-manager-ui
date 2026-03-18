@@ -4,11 +4,20 @@
 .card {
   min-height: 200px;
   padding: $spacing-250;
-  background-color: var(--color-el-primary);
+  background-color: var(--color-el);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: $spacing-300;
+  border-radius: $radius-20;
+}
+
+:root[data-theme='light'] {
+  .card {
+    box-shadow:
+      0px 2px 2px 0px rgba(194, 206, 225, 0.2),
+      0px 1px 5px 1px rgba(194, 206, 225, 0.22);
+  }
 }
 
 .info {
@@ -16,7 +25,7 @@
   gap: $spacing-200;
 }
 
-.logo {
+.logoImg {
   width: 60px;
   height: 60px;
 }
@@ -45,10 +54,15 @@
 }
 
 .removeBtn {
-  background-color: var(--color-el-primary);
+  background-color: var(--color-el);
   padding: $spacing-100 $spacing-200;
   border: 1px solid var(--color-border-secondary);
   border-radius: $radius-full;
   color: var(--color-text-primary);
   @include text-preset-6;
+
+  &:hover {
+    color: var(--color-filter-active-text);
+    background-color: var(--color-filter-active);
+  }
 }

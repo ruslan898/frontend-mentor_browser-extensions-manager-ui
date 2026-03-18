@@ -1,11 +1,24 @@
 import styles from './ToggleSwitch.module.scss';
 
-export default function ToggleSwitch() {
+type ToggleSwitchProps = {
+  isActive: boolean;
+  onToggle: () => void;
+};
+
+export default function ToggleSwitch({
+  isActive,
+  onToggle,
+}: ToggleSwitchProps) {
   const { switchClass, slider, round } = styles;
 
   return (
     <label className={switchClass}>
-      <input type="checkbox" />
+      <input
+        type="checkbox"
+        checked={isActive}
+        onChange={onToggle}
+        aria-label="Toggle extension"
+      />
       <span className={`${slider} ${round}`}></span>
     </label>
   );
